@@ -1,0 +1,6 @@
+CREATE TABLE data
+(
+    heure DATETIME PRIMARY KEY NOT NULL,
+	temperature FLOAT,
+	humidite FLOAT
+)
