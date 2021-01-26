@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$.ajax({
-		url: "http://localhost/api/data.php",
+		url: "http://localhost/WeatherStation/api/data.php",
 		method: "GET",
 		success: function(data) {
 			console.log(data);
