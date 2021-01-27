@@ -11,6 +11,6 @@
 * DF-DFR0063
 
 ## Fonctionnement du projet
-Le capteur de temperature/humidité est connecté sur les pins GPIO du Raspberry
-Un script python insère les données dans la la base de données tous les 5min
-Le site web recupère les données via une API en PHP qu'il affiche sous forme graphique à l'aide de la librairie ChartJS
+* Le capteur de temperature/humidité est connecté sur les pins GPIO du Raspberry
+* Un script python insère les données dans la la base de données tous les 5min
+* Le site web recupère les données via une API en PHP qu'il affiche sous forme graphique à l'aide de la librairie ChartJS
