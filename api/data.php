@@ -21,7 +21,7 @@ if(!$mysqli){
 }
 
 //query to get data from the table
-$query = sprintf("SELECT heure, temperature FROM test ORDER BY heure");
+$query = sprintf("SELECT heure, temperature, humidite FROM test ORDER BY heure");
 
 //execute query
 $result = $mysqli->query($query);

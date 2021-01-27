@@ -5,29 +5,29 @@ $(document).ready(function(){
 		success: function(data) {
 			console.log(data);
 			var period = [];
-			var temp = [];
+			var humid = [];
 
 			for(var i in data) {
 				period.push(data[i].heure);
-				temp.push(data[i].temperature);
+				humid.push(data[i].humidite);
 			}
 
 			var chartdata = {
 				labels: period,
 				datasets : [
 					{
-						label: 'Temperature',
+						label: 'Humidité',
 						backgroundColor: 'rgba(232, 37, 63, 0.75)',
 						borderColor: 'rgba(200, 200, 200, 0.75)',
 						hoverBackgroundColor: 'rgba(200, 200, 200, 1)',
 						hoverBorderColor: 'rgba(200, 200, 200, 1)',
-						data:temp,
+						data:humid,
                         fill:false,
 					},     
 				]
 			};
 
-			var ctx = $("#line-temperature");
+			var ctx = $("#line-humidite");
 
 			var barGraph = new Chart(ctx, {
 				type: 'line',
