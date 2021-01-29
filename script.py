@@ -32,7 +32,7 @@ new_humidite = "%0.1f" % sensor.relative_humidity
 
 try:
     cur.execute(
-        "INSERT INTO test (heure, temperature, humidite) VALUES (?, ?, ?)", 
+        "INSERT INTO data (heure, temperature, humidite) VALUES (?, ?, ?)",
         (new_heure, new_temperature, new_humidite))
 except mariadb.Error as e:
     print(f"Error: {e}")
