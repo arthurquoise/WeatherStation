@@ -27,10 +27,12 @@ $query = sprintf("SELECT * FROM data ORDER BY heure DESC limit 10");
 $result = $mysqli->query($query);
 
 //loop through the returned data
-$data = array();
+$dataDesc = array();
 foreach ($result as $row) {
-  $data[] = $row;
+  $dataDesc[] = $row;
 }
+
+$data = array_reverse($dataDesc);
 
 //free memory associated with result
 $result->close();
