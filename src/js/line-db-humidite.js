@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$.ajax({
-		url: "http://192.168.1.86/WeatherStation/api/data.php",
+		url: "http://213.44.97.144/WeatherStation/api/data.php",
 		method: "GET",
 		success: function(data) {
 			console.log(data);
