@@ -7,12 +7,12 @@ $(document).ready(function(){
 			var period = [];
 			var humid = [];
 
-			for(var i in data) {
+			for(let i in data) {
 				period.push(data[i].heure);
 				humid.push(data[i].humidite);
 			}
 
-			var chartdata = {
+			var chartHumidity = {
 				labels: period,
 				datasets : [
 					{
@@ -31,7 +31,7 @@ $(document).ready(function(){
 
 			var barGraph = new Chart(ctx, {
 				type: 'line',
-				data: chartdata
+				data: chartHumidity
 			});
 		},
 		error: function(data) {

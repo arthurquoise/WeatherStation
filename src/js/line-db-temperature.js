@@ -7,12 +7,12 @@ $(document).ready(function(){
 			var period = [];
 			var temp = [];
 
-			for(var i in data) {
+			for(let i in data) {
 				period.push(data[i].heure);
 				temp.push(data[i].temperature);
 			}
 
-			var chartdata = {
+			var chartTemperature = {
 				labels: period,
 				datasets : [
 					{
@@ -31,7 +31,7 @@ $(document).ready(function(){
 
 			var barGraph = new Chart(ctx, {
 				type: 'line',
-				data: chartdata
+				data: chartTemperature
 			});
 		},
 		error: function(data) {
