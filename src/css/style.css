@@ -1,5 +1,5 @@
 body {
-background-color:#B0EDF9;
+background-color:#ecf0f1;
 }
 .btn-group{
 margin-top: 6%;
@@ -50,3 +50,7 @@ h1{
 	  }
 }
 
+#plan{
+    width: 600px;
+    height: auto;
+}
