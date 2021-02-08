@@ -95,10 +95,6 @@
       </div>
     </div>
   </nav>
-<div class="sharethis-sticky-share-buttons"></div>
-    <style type="text/css">   
-      @import url("../src/css/style.css");  
-    </style>
   <!-- NAVBAR -->
 
   <!-- MAIN -->
@@ -107,16 +103,42 @@
     <div class="graphique">
       <canvas id="line-temperature"></canvas>
     </div>
-    <div class="btn-group" role="group" aria-label="Basic example">
-      <button type="button" class="btn btn-primary">Partager</button>
-    </div>
+    <div class="sharethis-inline-reaction-buttons"></div>
 
     <div class="graphique">
       <canvas id="line-humidite"></canvas>
     </div>
+    <div class="sharethis-inline-share-buttons"></div>
   </main>
 
   <!-- MAIN -->
+
+  <footer class="py-4 bg-dark flex-shrink-0">
+    <div class="container text-center">
+      <a href="https://www.cesi.fr" class="text-muted">CESI DI2020</a>
+    </div>
+  </footer>
+  <style type="text/css">
+    body{
+text-align:center;
+}
+ 
+#main{
+max-width:1280px;
+min-height:100%;
+margin:0 auto;
+position:relative;
+}
+ 
+footer{
+background:#ccc;
+position:absolute;
+bottom:0;
+width:100%;
+padding-top:50px;
+height:50px;
+}
+  </style>
   </body>
  
 </html>
