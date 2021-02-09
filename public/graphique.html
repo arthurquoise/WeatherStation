@@ -50,17 +50,15 @@
 
   <!-- MAIN -->
 
-  <main>
-    <div class="graphique">
-      <canvas id="line-temperature"></canvas>
-    </div>
-
-    <div class="graphique">
-      <canvas id="line-humidite"></canvas>
-    </div>
-
-    <button type="button" class="btn btn-lg btn-secondary" onclick="window.location.href = 'mailto:?subject=RELEVE METEOROLOGIQUE&body=voici les dernier relevé de temperature et d humidité http://213.44.97.144/WeatherStation/public/graphique.html';" enable>Mail</button>
-    <button onclick="window.location.href = 'https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F213.44.97.144%2FWeatherStation%2Fpublic%2Fgraphique.html';" type="button" class="btn btn-primary btn-lg" enable>Facebook</button>
+  <main id="graph-id">
+      <div class="graphique">
+        <canvas id="line-temperature"></canvas>
+      </div>
+      <div class="graphique">
+        <canvas id="line-humidite"></canvas>
+      </div>
+      <button type="button" class="btn btn-lg btn-secondary" onclick="window.location.href = 'mailto:?subject=RELEVE METEOROLOGIQUE&body=voici les dernier relevé de temperature et d humidité http://213.44.97.144/WeatherStation/public/graphique.html';" enable>Mail</button>
+      <button onclick="window.location.href = 'https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F213.44.97.144%2FWeatherStation%2Fpublic%2Fgraphique.html';" type="button" class="btn btn-primary btn-lg" enable>Facebook</button>
   </main>
 
   <!-- MAIN -->
