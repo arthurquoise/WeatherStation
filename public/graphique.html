@@ -2,6 +2,8 @@
 <html>
  
   <head>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v9.0&appId=968208803388565&autoLogAppEvents=1" nonce="xs7joUrk"></script>
+
     <meta charset="utf-8">
     <title>Station Météo</title>
 	  <meta name="viewport" content = "width=device-width,initial-scale=1.0">
@@ -48,16 +50,12 @@
     <div class="graphique">
       <canvas id="line-temperature"></canvas>
     </div>
-    <div class="btn-group" role="group" aria-label="Basic example">
-      <button type="button" class="btn btn-primary">Partager</button>
-    </div>
 
     <div class="graphique">
       <canvas id="line-humidite"></canvas>
     </div>
-    <div class="btn-group" role="group" aria-label="Basic example">
-      <button type="button" class="btn btn-primary">Partager</button>
-    </div>
+    <button type="button" class="btn btn-lg btn-secondary" onclick="window.location.href = 'mailto:?subject=RELEVE METEOROLOGIQUE&body=voici les dernier relevé de temperature et d humidité http://213.44.97.144/WeatherStation/public/graphique.html';" enable>Mail</button>
+<button onclick="window.location.href = 'https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F213.44.97.144%2FWeatherStation%2Fpublic%2Fgraphique.html';" type="button" class="btn btn-primary btn-lg" enable>Facebook</button>
   </main>
 
   <!-- MAIN -->
