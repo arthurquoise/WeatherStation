@@ -1,5 +1,6 @@
 body {
-background-color:#B0EDF9;
+background-color:#ecf0f1;
+text-align:center;
 }
 .btn-group{
 margin-top: 6%;
@@ -9,14 +10,14 @@ display:block;
 .graphique{
 max-width:50%;
 max-height:40%; 
-margin-top:5%;
+margin-top:3rem;
 margin-left:auto;
 margin-right:auto;
 display:block;
 }
 h1{
 		animation: fadein 2s;
-		  margin-top: 20%;
+		  margin-top: 15%;
 		  text-align:center;
 		  color:white; 
 	  }
@@ -37,16 +38,66 @@ display:block;
     .graphique{
 max-width: 100%;
     max-height: 100%;
-    margin-top: 40%;
-    margin-left: 0%;
+    margin-top: 3rem;
+    margin-left: 0;
     display: block;
 }
 h1{
 		animation: fadein 2s;
 		  margin-top: 60%;
-		  margin-bottom:40%;
+		  margin-bottom:1rem;
 		  text-align:center;
 		  color:white; 
 	  }
 }
 
+#plan{
+    width: 600px;
+    height: auto;
+}
+
+
+
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color:#fff;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.index-body{
+    background-image: URL("../../img/nuages.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+.body-contact{
+    background-image: URL("../../img/espace.gif");
+    background-position: center center;
+    background-size: cover;
+}
+
+.to-white{
+    color:white;
+}
+
+#legend-map{
+    text-align: center;
+}
+
+#graph-id{
+    padding-bottom: 5rem;
+}
+
+.share-button{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
